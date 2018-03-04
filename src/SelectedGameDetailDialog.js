@@ -24,6 +24,7 @@ class SelectedGameDetailDialog extends Component {
         open={!closing}
         onRequestClose={this.close}
         autoScrollBodyContent={true}
+        contentStyle={{ width: '90%' }}
       >
         <GameDetail game={game} />
       </Dialog>

@@ -3,9 +3,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import './App.css';
 import AppHeader from './AppHeader';
-import GamesList from './GamesList';
+import FilteredGamesList from './FilteredGamesList';
 import SelectedGameDetailDialog from './SelectedGameDetailDialog';
-import games from './gamesData';
 
 class App extends PureComponent {
   render() {
@@ -14,7 +13,7 @@ class App extends PureComponent {
         <MuiThemeProvider>
           <div className="App">
             <AppHeader />
-            <GamesList games={games} />
+            <FilteredGamesList />
             <Route
               exact
               path="/games/:gameId"

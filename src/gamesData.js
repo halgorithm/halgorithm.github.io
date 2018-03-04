@@ -3,10 +3,10 @@ import freeze from 'deep-freeze';
 const data = freeze({
   exampleGame: {
     id: 'exampleGame',
-    title: 'Example Game',
+    title: 'Jumpster Jones',
     url: 'https://google.com',
     date: new Date(),
-    tags: [],
+    tagIds: ['platformer'],
     description: "An example game I made because I'm great",
     image:
       'http://www.mobygames.com/images/shots/l/218703-super-mario-world-snes-screenshot-title-screen.png',
@@ -17,10 +17,10 @@ const data = freeze({
   },
   exampleGame2: {
     id: 'exampleGame2',
-    title: 'Example Game 2',
+    title: 'Damp Spirits',
     url: 'https://google.com',
     date: new Date(),
-    tags: [],
+    tagIds: ['co_op'],
     description: "Another example game I made because I'm great",
     image: 'https://i.ytimg.com/vi/C_BLl9nu8Es/maxresdefault.jpg',
     extraImages: [
@@ -31,10 +31,10 @@ const data = freeze({
   },
   exampleGame3: {
     id: 'exampleGame3',
-    title: 'Example Game 3',
+    title: 'Jam Game 1',
     url: 'https://google.com',
     date: new Date(),
-    tags: [],
+    tagIds: ['jam'],
     description: "Another example game I made because I'm great",
     image:
       'https://static.giantbomb.com/uploads/scale_small/9/93770/2364832-snes_supermariorpg_2.jpg',
@@ -42,10 +42,10 @@ const data = freeze({
   },
   exampleGame4: {
     id: 'exampleGame4',
-    title: 'Example Game 3',
+    title: 'Some other game',
     url: 'https://google.com',
     date: new Date(),
-    tags: [],
+    tagIds: [],
     description: "Another example game I made because I'm great",
     image:
       'https://static.giantbomb.com/uploads/scale_small/9/93770/2364832-snes_supermariorpg_2.jpg',
@@ -53,10 +53,10 @@ const data = freeze({
   },
   exampleGame5: {
     id: 'exampleGame5',
-    title: 'Example Game 3',
+    title: 'Co-op Jam Game',
     url: 'https://google.com',
     date: new Date(),
-    tags: [],
+    tagIds: ['co_op', 'jam'],
     description: "Another example game I made because I'm great",
     image:
       'https://static.giantbomb.com/uploads/scale_small/9/93770/2364832-snes_supermariorpg_2.jpg',
@@ -64,10 +64,10 @@ const data = freeze({
   },
   exampleGame6: {
     id: 'exampleGame6',
-    title: 'Example Game 3',
+    title: 'Jumpster Jones: The Sequel',
     url: 'https://google.com',
     date: new Date(),
-    tags: [],
+    tagIds: ['platformer'],
     description: "Another example game I made because I'm great",
     image:
       'https://static.giantbomb.com/uploads/scale_small/9/93770/2364832-snes_supermariorpg_2.jpg',
@@ -75,10 +75,10 @@ const data = freeze({
   },
   exampleGame7: {
     id: 'exampleGame7',
-    title: 'Example Game 3',
+    title: 'Platformer Jam Game',
     url: 'https://google.com',
     date: new Date(),
-    tags: [],
+    tagIds: ['jam', 'platformer'],
     description: "Another example game I made because I'm great",
     image:
       'https://static.giantbomb.com/uploads/scale_small/9/93770/2364832-snes_supermariorpg_2.jpg',

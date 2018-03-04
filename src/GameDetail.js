@@ -2,6 +2,7 @@ import React from 'react';
 import { RaisedButton } from 'material-ui';
 import Slider from 'react-slick';
 // import 'react-slick/index.css';
+import tags from './tagsData';
 
 const GameDetail = ({ game }) => {
   const images = [game.image, ...game.extraImages];
