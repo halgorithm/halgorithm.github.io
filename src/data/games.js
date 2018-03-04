@@ -13,7 +13,8 @@ const data = freeze({
     extraImages: [
       'http://www.juicygamereviews.com/uploads/3/0/5/0/30501048/48649.png?730',
       'https://r.mprd.se/media/images/35737-Super_Mario_All-Stars_+_Super_Mario_World_(Europe)-3.jpg'
-    ]
+    ],
+    playText: 'A: Run'
   },
   exampleGame2: {
     id: 'exampleGame2',
@@ -27,7 +28,8 @@ const data = freeze({
       'https://cdn.vox-cdn.com/thumbor/yx5syTUG6h-g4E-odlGPTC8qsYY=/148x0:1768x1080/1200x800/filters:focal(148x0:1768x1080)/cdn.vox-cdn.com/uploads/chorus_image/image/46485808/dark_souls_3.0.0.jpg',
       'https://2static.fjcdn.com/pictures/My+dark+souls+3+screenshots_c463c8_5905031.jpg',
       'http://www.mobygames.com/images/shots/l/884625-dark-souls-iii-the-ringed-city-windows-screenshot-inside-a.jpg'
-    ]
+    ],
+    playText: ''
   },
   exampleGame3: {
     id: 'exampleGame3',
@@ -38,7 +40,8 @@ const data = freeze({
     description: "Another example game I made because I'm great",
     image:
       'https://static.giantbomb.com/uploads/scale_small/9/93770/2364832-snes_supermariorpg_2.jpg',
-    extraImages: []
+    extraImages: [],
+    playText: ''
   },
   exampleGame4: {
     id: 'exampleGame4',
@@ -49,7 +52,8 @@ const data = freeze({
     description: "Another example game I made because I'm great",
     image:
       'https://static.giantbomb.com/uploads/scale_small/9/93770/2364832-snes_supermariorpg_2.jpg',
-    extraImages: []
+    extraImages: [],
+    playText: ''
   },
   exampleGame5: {
     id: 'exampleGame5',
@@ -60,7 +64,8 @@ const data = freeze({
     description: "Another example game I made because I'm great",
     image:
       'https://static.giantbomb.com/uploads/scale_small/9/93770/2364832-snes_supermariorpg_2.jpg',
-    extraImages: []
+    extraImages: [],
+    playText: ''
   },
   exampleGame6: {
     id: 'exampleGame6',
@@ -71,7 +76,8 @@ const data = freeze({
     description: "Another example game I made because I'm great",
     image:
       'https://static.giantbomb.com/uploads/scale_small/9/93770/2364832-snes_supermariorpg_2.jpg',
-    extraImages: []
+    extraImages: [],
+    playText: ''
   },
   exampleGame7: {
     id: 'exampleGame7',
@@ -82,7 +88,8 @@ const data = freeze({
     description: "Another example game I made because I'm great",
     image:
       'https://static.giantbomb.com/uploads/scale_small/9/93770/2364832-snes_supermariorpg_2.jpg',
-    extraImages: []
+    extraImages: [],
+    playText: ''
   }
 });
 

@@ -31,15 +31,40 @@
   }
 }
 
+body {
+  background-color: #222233;
+}
+
+.games-list {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
 .game-card {
-  display: inline-block;
   width: 200px;
   height: 160px;
   padding-top: 20px;
 }
 
+a {
+  color: #ccccee;
+  text-decoration: none;
+  font-family: Roboto Mono;
+}
+
+.game-card a {
+  text-align: center;
+  color: black;
+}
+
+.game-card {
+  background-color: transparent;
+  transition: background-color 0.1s linear;
+}
+
 .game-card:hover {
-  background-color: beige;
+  background-color: #333355;
 }
 
 /* .variable-width .slick-slide p {

@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import TagFilter from './TagFilter';
 import GamesList from './GamesList';
-import games from './gamesData';
+import { games } from './data';
 
 class FilteredGamesList extends PureComponent {
   state = { filterTagIds: [] };

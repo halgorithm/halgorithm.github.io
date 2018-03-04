@@ -1,6 +1,6 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import { RaisedButton } from 'material-ui';
-import tags from './tagsData';
+import { tags } from './data';
 
 const TagFilter = ({ filterTagIds, onChange }) => {
   const tagEls = Object.values(tags).map(tag => (
@@ -8,6 +8,7 @@ const TagFilter = ({ filterTagIds, onChange }) => {
       key={tag.id}
       onClick={() => onChange(toggleTag(filterTagIds, tag.id))}
       primary={filterTagIds.includes(tag.id)}
+      disableTouchRipple={true}
       style={{ margin: 4 }}
     >
       {tag.label}

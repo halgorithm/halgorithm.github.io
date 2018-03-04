@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import { Dialog } from 'material-ui';
 import GameDetail from './GameDetail';
-import games from './gamesData';
+import { games } from './data';
 
 class SelectedGameDetailDialog extends Component {
   state = { closing: false, closed: false };

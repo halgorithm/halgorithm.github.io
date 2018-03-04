@@ -1,8 +1,8 @@
 import React from 'react';
-import { RaisedButton } from 'material-ui';
+import { FlatButton, RaisedButton } from 'material-ui';
 import Slider from 'react-slick';
 // import 'react-slick/index.css';
-import tags from './tagsData';
+import { tags } from './data';
 
 const GameDetail = ({ game }) => {
   const images = [game.image, ...game.extraImages];
@@ -13,15 +13,21 @@ const GameDetail = ({ game }) => {
     speed: 500,
     dots: true
   };
+  const tagEls = game.tagIds.map(tagId => (
+    <FlatButton key={tagId} disabled={true}>
+      {tags[tagId].label}
+    </FlatButton>
+  ));
 
   return (
     <div>
-      {/* <Slider {...sliderSettings}>{imageEls}</Slider> */}
+      <Slider {...sliderSettings}>{imageEls}</Slider>
       <a href={`/games/${game.id}/play`}>
-        <RaisedButton>Play Game</RaisedButton>
+        <RaisedButton primary>Play Game</RaisedButton>
       </a>
       <p>{game.title}</p>
       <p>{game.description}</p>
+      <div>{tagEls}</div>
     </div>
   );
 };
