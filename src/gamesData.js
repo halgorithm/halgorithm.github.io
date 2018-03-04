@@ -4,6 +4,9 @@ const data = freeze({
   exampleGame: {
     id: 'exampleGame',
     title: 'Example Game',
+    url: 'https://google.com',
+    date: new Date(),
+    tags: [],
     description: "An example game I made because I'm great",
     image:
       'http://www.mobygames.com/images/shots/l/218703-super-mario-world-snes-screenshot-title-screen.png',
@@ -15,6 +18,9 @@ const data = freeze({
   exampleGame2: {
     id: 'exampleGame2',
     title: 'Example Game 2',
+    url: 'https://google.com',
+    date: new Date(),
+    tags: [],
     description: "Another example game I made because I'm great",
     image: 'https://i.ytimg.com/vi/C_BLl9nu8Es/maxresdefault.jpg',
     extraImages: [
@@ -26,6 +32,9 @@ const data = freeze({
   exampleGame3: {
     id: 'exampleGame3',
     title: 'Example Game 3',
+    url: 'https://google.com',
+    date: new Date(),
+    tags: [],
     description: "Another example game I made because I'm great",
     image:
       'https://static.giantbomb.com/uploads/scale_small/9/93770/2364832-snes_supermariorpg_2.jpg',
@@ -34,6 +43,9 @@ const data = freeze({
   exampleGame4: {
     id: 'exampleGame4',
     title: 'Example Game 3',
+    url: 'https://google.com',
+    date: new Date(),
+    tags: [],
     description: "Another example game I made because I'm great",
     image:
       'https://static.giantbomb.com/uploads/scale_small/9/93770/2364832-snes_supermariorpg_2.jpg',
@@ -42,6 +54,9 @@ const data = freeze({
   exampleGame5: {
     id: 'exampleGame5',
     title: 'Example Game 3',
+    url: 'https://google.com',
+    date: new Date(),
+    tags: [],
     description: "Another example game I made because I'm great",
     image:
       'https://static.giantbomb.com/uploads/scale_small/9/93770/2364832-snes_supermariorpg_2.jpg',
@@ -50,6 +65,9 @@ const data = freeze({
   exampleGame6: {
     id: 'exampleGame6',
     title: 'Example Game 3',
+    url: 'https://google.com',
+    date: new Date(),
+    tags: [],
     description: "Another example game I made because I'm great",
     image:
       'https://static.giantbomb.com/uploads/scale_small/9/93770/2364832-snes_supermariorpg_2.jpg',
@@ -58,6 +76,9 @@ const data = freeze({
   exampleGame7: {
     id: 'exampleGame7',
     title: 'Example Game 3',
+    url: 'https://google.com',
+    date: new Date(),
+    tags: [],
     description: "Another example game I made because I'm great",
     image:
       'https://static.giantbomb.com/uploads/scale_small/9/93770/2364832-snes_supermariorpg_2.jpg',
