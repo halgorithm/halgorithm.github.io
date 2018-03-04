@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-export const GameCard = ({ title, description, image, extraImages }) => {
+const GameCard = ({ id, image, title }) => {
   return (
-    <div>
-      <a href="">
-        <img src={image} style={{ width: '100px' }} />
-      </a>
+    <Link to={`/games/${id}`} className="game-card">
+      <img src={image} alt={title} style={{ height: 100 }} />
       <p>{title}</p>
-      <p>{description}</p>
-    </div>
-  )
-}
+    </Link>
+  );
+};
+
+export default GameCard;
