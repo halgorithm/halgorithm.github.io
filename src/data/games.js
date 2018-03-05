@@ -4,7 +4,7 @@ const data = freeze({
   exampleGame: {
     id: 'exampleGame',
     title: 'Jumpster Jones',
-    url: 'https://google.com',
+    url: 'https://halgorithm.github.io/example-game/',
     date: new Date(),
     tagIds: ['platformer'],
     description: "An example game I made because I'm great",
@@ -14,12 +14,12 @@ const data = freeze({
       'http://www.juicygamereviews.com/uploads/3/0/5/0/30501048/48649.png?730',
       'https://r.mprd.se/media/images/35737-Super_Mario_All-Stars_+_Super_Mario_World_(Europe)-3.jpg'
     ],
-    playText: 'A: Run'
+    playText: 'Check out this cool game'
   },
   exampleGame2: {
     id: 'exampleGame2',
     title: 'Damp Spirits',
-    url: 'https://google.com',
+    url: 'https://halgorithm.github.io/example-game/',
     date: new Date(),
     tagIds: ['co_op'],
     description: "Another example game I made because I'm great",
@@ -34,7 +34,7 @@ const data = freeze({
   exampleGame3: {
     id: 'exampleGame3',
     title: 'Jam Game 1',
-    url: 'https://google.com',
+    url: 'https://halgorithm.github.io/example-game/',
     date: new Date(),
     tagIds: ['jam'],
     description: "Another example game I made because I'm great",
@@ -46,7 +46,7 @@ const data = freeze({
   exampleGame4: {
     id: 'exampleGame4',
     title: 'Some other game',
-    url: 'https://google.com',
+    url: 'https://halgorithm.github.io/example-game/',
     date: new Date(),
     tagIds: [],
     description: "Another example game I made because I'm great",
@@ -58,7 +58,7 @@ const data = freeze({
   exampleGame5: {
     id: 'exampleGame5',
     title: 'Co-op Jam Game',
-    url: 'https://google.com',
+    url: 'https://halgorithm.github.io/example-game/',
     date: new Date(),
     tagIds: ['co_op', 'jam'],
     description: "Another example game I made because I'm great",
@@ -70,7 +70,7 @@ const data = freeze({
   exampleGame6: {
     id: 'exampleGame6',
     title: 'Jumpster Jones: The Sequel',
-    url: 'https://google.com',
+    url: 'https://halgorithm.github.io/example-game/',
     date: new Date(),
     tagIds: ['platformer'],
     description: "Another example game I made because I'm great",
@@ -82,7 +82,7 @@ const data = freeze({
   exampleGame7: {
     id: 'exampleGame7',
     title: 'Platformer Jam Game',
-    url: 'https://google.com',
+    url: 'https://halgorithm.github.io/example-game/',
     date: new Date(),
     tagIds: ['jam', 'platformer'],
     description: "Another example game I made because I'm great",
