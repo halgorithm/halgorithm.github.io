@@ -17,7 +17,7 @@ class SelectedGameDetailDialog extends Component {
     const game = games[gameId];
     const { closing, closed } = this.state;
 
-    return closed ? (
+    return closed || !game ? (
       <Redirect to="/games" />
     ) : (
       <Dialog
