@@ -3,6 +3,11 @@ import GameCard from './GameCard';
 import './GamesList.css';
 
 const GamesList = ({ games }) => {
+  if (games.length === 0)
+    return (
+      <h3 style={{ textAlign: 'center', marginTop: 40 }}>No games found.</h3>
+    );
+
   const gameEls = Object.values(games).map(
     ({ id, image, extraImages, title }) => (
       <GameCard
