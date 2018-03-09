@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import { compareAsc } from 'date-fns';
 import TagsFilter from './TagsFilter';
 import GamesList from './GamesList';
 import { games } from './data';

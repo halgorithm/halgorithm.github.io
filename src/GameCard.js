@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { format } from 'date-fns/esm';
 import ImageFader from './ImageFader';
 import './GameCard.css';
 
@@ -24,19 +25,22 @@ class GameCard extends Component {
   };
 
   render() {
-    const { id, images, title } = this.props;
+    const { gameId, images, title, date } = this.props;
     const { curImageIndex } = this.state;
 
     return (
       <Link
-        to={`/games/${id}`}
+        to={`/games/${gameId}`}
         className="game-card"
         onMouseEnter={this.startHover}
         onMouseLeave={this.stopHover}
       >
         <div>
           <ImageFader images={images} curImageIndex={curImageIndex} />
-          <p>{title}</p>
+          <p style={{ fontSize: 18, marginTop: 8 }}>{title}</p>
+          <p style={{ fontSize: 12, marginTop: -16, color: '#557' }}>
+            {format(date, 'MMM D, YYYY')}
+          </p>
         </div>
       </Link>
     );

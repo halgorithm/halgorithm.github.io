@@ -1,20 +1,27 @@
 import React from 'react';
+import SadFace from 'material-ui/svg-icons/social/sentiment-dissatisfied';
 import GameCard from './GameCard';
 import './GamesList.css';
 
 const GamesList = ({ games }) => {
   if (games.length === 0)
     return (
-      <h3 style={{ textAlign: 'center', marginTop: 40 }}>No games found.</h3>
+      <div className="no-games">
+        <h3 style={{ textAlign: 'center', marginTop: 40 }}>
+          Couldn't find any games.
+        </h3>
+        <SadFace color="#333350" style={{ width: '100px', height: '100px' }} />
+      </div>
     );
 
   const gameEls = Object.values(games).map(
-    ({ id, image, extraImages, title }) => (
+    ({ id, image, extraImages, title, date }) => (
       <GameCard
         key={id}
-        id={id}
+        gameId={id}
         title={title}
         images={[image, ...extraImages]}
+        date={date}
       />
     )
   );

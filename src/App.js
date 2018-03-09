@@ -17,6 +17,7 @@ import NotFound from './NotFound';
 
 const muiTheme = { ...darkBaseTheme };
 muiTheme.palette.canvasColor = '#333355';
+// muiTheme.palette.textColor = '#557';
 
 class App extends PureComponent {
   render() {
