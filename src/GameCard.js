@@ -28,12 +28,13 @@ class GameCard extends Component {
     const { curImageIndex } = this.state;
 
     return (
-      <Link to={`/games/${id}`} className="game-card">
-        <div
-          className="game-card"
-          onMouseEnter={this.startHover}
-          onMouseLeave={this.stopHover}
-        >
+      <Link
+        to={`/games/${id}`}
+        className="game-card"
+        onMouseEnter={this.startHover}
+        onMouseLeave={this.stopHover}
+      >
+        <div>
           <ImageFader images={images} curImageIndex={curImageIndex} />
           <p>{title}</p>
         </div>

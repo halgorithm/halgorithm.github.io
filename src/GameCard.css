@@ -4,11 +4,6 @@
   padding-top: 20px;
 }
 
-.game-card a {
-  text-align: center;
-  color: black;
-}
-
 .game-card {
   background-color: transparent;
   transition: background-color 0.1s linear;
