@@ -2,69 +2,18 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
 .App-intro {
   font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 body {
   background-color: #222233;
 }
 
-.games-list {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-}
-
-.game-card {
-  width: 200px;
-  height: 160px;
-  padding-top: 20px;
-}
-
 a {
   color: #ccccee;
   text-decoration: none;
   font-family: Roboto Mono;
-}
-
-.game-card a {
-  text-align: center;
-  color: black;
-}
-
-.game-card {
-  background-color: transparent;
-  transition: background-color 0.1s linear;
-}
-
-.game-card:hover {
-  background-color: #333355;
 }
 
 /* .variable-width .slick-slide p {

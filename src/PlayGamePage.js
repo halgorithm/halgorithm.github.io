@@ -15,7 +15,13 @@ const PlayGamePage = ({ match }) => {
           <p>{game.title}</p>
         </span>
       </div>
-      <iframe src={urlWithConfig} width={768} height={432} frameBorder={0} />
+      <iframe
+        title={game.title}
+        src={urlWithConfig}
+        width={768}
+        height={432}
+        frameBorder={0}
+      />
       <div>{game.playText}</div>
     </div>
   );
