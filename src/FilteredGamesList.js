@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import TagFilter from './TagFilter';
+import TagsFilter from './TagsFilter';
 import GamesList from './GamesList';
 import { games } from './data';
 
@@ -16,7 +16,7 @@ class FilteredGamesList extends PureComponent {
 
     return (
       <div>
-        <TagFilter
+        <TagsFilter
           filterTagIds={filterTagIds}
           onChange={this.updateFilterTagIds}
         />

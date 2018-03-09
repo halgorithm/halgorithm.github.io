@@ -1,8 +1,8 @@
 import React from 'react';
-import { FlatButton, RaisedButton } from 'material-ui';
+import { RaisedButton } from 'material-ui';
 import Slider from 'react-slick';
+import StaticTag from './StaticTag';
 // import 'react-slick/index.css';
-import { tags } from './data';
 
 const GameDetail = ({ game }) => {
   const images = [game.image, ...game.extraImages];
@@ -14,9 +14,7 @@ const GameDetail = ({ game }) => {
     dots: true
   };
   const tagEls = game.tagIds.map(tagId => (
-    <FlatButton key={tagId} disabled={true}>
-      {tags[tagId].label}
-    </FlatButton>
+    <StaticTag key={tagId} tagId={tagId} />
   ));
 
   return (

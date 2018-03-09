@@ -3,15 +3,18 @@ import freeze from 'deep-freeze';
 const data = freeze({
   platformer: {
     id: 'platformer',
-    label: 'Platformer'
+    label: 'Platformer',
+    icon: 'directions_run'
   },
   jam: {
     id: 'jam',
-    label: '24-hour challenge'
+    label: '24-hour challenge',
+    icon: 'timer'
   },
   co_op: {
     id: 'co_op',
-    label: 'Co-op'
+    label: 'Co-op',
+    icon: 'supervisor_account'
   }
 });
 

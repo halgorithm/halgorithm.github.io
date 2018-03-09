@@ -1,24 +1,22 @@
 import React from 'react';
-import { RaisedButton } from 'material-ui';
 import { tags } from './data';
+import ClickableTag from './ClickableTag';
 
 const TagFilter = ({ filterTagIds, onChange }) => {
-  const tagEls = Object.values(tags).map(tag => (
-    <RaisedButton
-      key={tag.id}
-      onClick={() => onChange(toggleTag(filterTagIds, tag.id))}
-      primary={filterTagIds.includes(tag.id)}
-      disableTouchRipple={true}
-      style={{ margin: 4 }}
-    >
-      {tag.label}
-    </RaisedButton>
+  const tagEls = Object.values(tags).map(({ id }) => (
+    <ClickableTag
+      key={id}
+      tagId={id}
+      highlight={filterTagIds.includes(id)}
+      onClick={() => onChange(toggleTag(filterTagIds, id))}
+    />
   ));
 
   return <div>Filter by: {tagEls}</div>;
 };
 
 const toggleTag = (tagIds, tagId) => {
+  console.log('bitch!');
   const tagIndex = tagIds.indexOf(tagId);
   return tagIndex === -1
     ? tagIds.concat(tagId)
