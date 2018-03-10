@@ -1,0 +1,11 @@
+.no-games svg {
+  width: 100px !important;
+  height: 100px !important;
+  color: #333350 !important;
+}
+
+.no-games h3 {
+  text-align: center;
+  color: #557;
+  margin-top: 0px;
+}
