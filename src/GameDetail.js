@@ -1,5 +1,10 @@
 import React from 'react';
-import { RaisedButton } from 'material-ui';
+import { Typography, Button } from 'material-ui';
+import {
+  DialogContent,
+  DialogContentText,
+  DialogTitle
+} from 'material-ui/Dialog';
 import Slider from 'react-slick';
 import StaticTag from './StaticTag';
 // import 'react-slick/index.css';
@@ -13,19 +18,26 @@ const GameDetail = ({ game }) => {
     speed: 500,
     dots: true
   };
-  const tagEls = game.tagIds.map(tagId => (
-    <StaticTag key={tagId} tagId={tagId} />
-  ));
+  const tagEls = game.tags.map(tag => <StaticTag key={tag} tagId={tag} />);
 
+  // <Slider {...sliderSettings}>{imageEls}</Slider>
   return (
     <div>
-      <Slider {...sliderSettings}>{imageEls}</Slider>
-      <a href={`/games/${game.id}/play`}>
-        <RaisedButton primary>Play Game</RaisedButton>
-      </a>
-      <p>{game.title}</p>
-      <p>{game.description}</p>
-      <div>{tagEls}</div>
+      <DialogTitle id="game-detail-dialog-title">{game.title}</DialogTitle>
+      <DialogContent>
+        <a href={`/games/${game.id}/play`}>
+          <Button
+            variant="raised"
+            style={{
+              background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)'
+            }}
+          >
+            Play Game
+          </Button>
+        </a>
+        <DialogContentText>{game.description}</DialogContentText>
+        <div>{tagEls}</div>
+      </DialogContent>
     </div>
   );
 };

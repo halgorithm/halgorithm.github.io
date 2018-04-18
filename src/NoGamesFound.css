@@ -1,3 +1,12 @@
+.no-games {
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.no-games.hidden {
+  opacity: 0;
+}
+
 .no-games svg {
   width: 100px !important;
   height: 100px !important;

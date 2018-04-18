@@ -1,37 +1,24 @@
 import React, { PureComponent } from 'react';
 import { compareAsc } from 'date-fns';
+import { observer, inject } from 'mobx-react';
 import TagsFilter from './TagsFilter';
 import NoGamesFound from './NoGamesFound';
 import GamesList from './GamesList';
-import { games } from './data';
 
-class FilteredGamesList extends PureComponent {
-  state = { filterTagIds: [] };
-
-  updateFilterTagIds = filterTagIds => this.setState({ filterTagIds });
-
-  render() {
-    const { filterTagIds } = this.state;
-    const filteredGames = Object.values(games).filter(game =>
-      filterTagIds.every(tagId => game.tagIds.includes(tagId))
+const FilteredGamesList = ({ store }) => {
+  const content =
+    store.displayedGames.length > 0 ? (
+      <GamesList games={store.displayedGames} />
+    ) : (
+      <NoGamesFound />
     );
-    const content =
-      filteredGames.length > 0 ? (
-        <GamesList games={filteredGames} />
-      ) : (
-        <NoGamesFound />
-      );
 
-    return (
-      <div>
-        <TagsFilter
-          filterTagIds={filterTagIds}
-          onChange={this.updateFilterTagIds}
-        />
-        {content}
-      </div>
-    );
-  }
-}
+  return (
+    <div>
+      <TagsFilter />
+      {content}
+    </div>
+  );
+};
 
-export default FilteredGamesList;
+export default inject('store')(observer(FilteredGamesList));

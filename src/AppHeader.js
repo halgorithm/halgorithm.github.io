@@ -1,11 +1,13 @@
 import React from 'react';
+import { Typography } from 'material-ui';
 import logo from './logo.svg';
 import './AppHeader.css';
 
 const AppHeader = () => (
   <header className="App-header">
-    <img src={logo} className="App-logo" alt="logo" />
-    <h1 className="App-title">My games</h1>
+    <Typography variant="display1" align="center">
+      Hal's games
+    </Typography>
   </header>
 );
 

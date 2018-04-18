@@ -1,26 +1,36 @@
 import React from 'react';
+import { observer, inject } from 'mobx-react';
+import { Typography } from 'material-ui';
 import { tags } from './data';
 import ClickableTag from './ClickableTag';
 
-const TagFilter = ({ filterTagIds, onChange }) => {
+const TagFilter = ({ store }) => {
+  const { filterTags, toggleFilterTag } = store;
+
   const tagEls = Object.values(tags).map(({ id }) => (
     <ClickableTag
       key={id}
       tagId={id}
-      highlight={filterTagIds.includes(id)}
-      onClick={() => onChange(toggleTag(filterTagIds, id))}
+      highlight={filterTags.includes(id)}
+      onClick={() => toggleFilterTag(id)}
     />
   ));
 
-  return <div>Filter by: {tagEls}</div>;
+  return (
+    <div>
+      <Typography variant="body1" align="center">
+        Filter by:
+      </Typography>
+      <span>{tagEls}</span>
+    </div>
+  );
 };
 
-const toggleTag = (tagIds, tagId) => {
-  console.log('bitch!');
-  const tagIndex = tagIds.indexOf(tagId);
-  return tagIndex === -1
-    ? tagIds.concat(tagId)
-    : [...tagIds.slice(0, tagIndex), ...tagIds.slice(tagIndex + 1)];
-};
+// const toggleTag = (tagIds, tagId) => {
+//   const tagIndex = tagIds.indexOf(tagId);
+//   return tagIndex === -1
+//     ? tagIds.concat(tagId)
+//     : [...tagIds.slice(0, tagIndex), ...tagIds.slice(tagIndex + 1)];
+// };
 
-export default TagFilter;
+export default inject('store')(observer(TagFilter));

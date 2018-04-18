@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Typography } from 'material-ui';
 import { Link } from 'react-router-dom';
 import { format } from 'date-fns/esm';
 import ImageFader from './ImageFader';
@@ -37,10 +38,16 @@ class GameCard extends Component {
       >
         <div>
           <ImageFader images={images} curImageIndex={curImageIndex} />
-          <p style={{ fontSize: 18, marginTop: 8 }}>{title}</p>
-          <p style={{ fontSize: 12, marginTop: -16, color: '#557' }}>
+          <Typography variant="subheading" align="center">
+            {title}
+          </Typography>
+          <Typography variant="caption" align="center">
             {format(date, 'MMM D, YYYY')}
-          </p>
+          </Typography>
+          {/* <p style={{ fontSize: 18, marginTop: 8 }}>{title}</p>
+          <p style={{ fontSize: 12, marginTop: -16 }}>
+            {format(date, 'MMM D, YYYY')}
+          </p> */}
         </div>
       </Link>
     );

@@ -6,7 +6,7 @@ const exampleData = freeze({
     title: 'Jumpster Jones',
     url: 'https://halgorithm.github.io/example-game/',
     date: new Date(),
-    tagIds: ['platformer'],
+    tags: ['platformer'],
     description: "An example game I made because I'm great",
     image:
       'http://www.mobygames.com/images/shots/l/218703-super-mario-world-snes-screenshot-title-screen.png',
@@ -21,7 +21,7 @@ const exampleData = freeze({
     title: 'Damp Spirits',
     url: 'https://halgorithm.github.io/example-game/',
     date: new Date(),
-    tagIds: ['co_op'],
+    tags: ['co_op'],
     description: "Another example game I made because I'm great",
     image: 'https://i.ytimg.com/vi/C_BLl9nu8Es/maxresdefault.jpg',
     extraImages: [
@@ -36,7 +36,7 @@ const exampleData = freeze({
     title: 'Jam Game 1',
     url: 'https://halgorithm.github.io/example-game/',
     date: new Date(),
-    tagIds: ['jam'],
+    tags: ['jam'],
     description: "Another example game I made because I'm great",
     image:
       'https://static.giantbomb.com/uploads/scale_small/9/93770/2364832-snes_supermariorpg_2.jpg',
@@ -48,7 +48,7 @@ const exampleData = freeze({
     title: 'Some other game',
     url: 'https://halgorithm.github.io/example-game/',
     date: new Date(),
-    tagIds: [],
+    tags: [],
     description: "Another example game I made because I'm great",
     image:
       'https://static.giantbomb.com/uploads/scale_small/9/93770/2364832-snes_supermariorpg_2.jpg',
@@ -60,7 +60,7 @@ const exampleData = freeze({
     title: 'Co-op Jam Game',
     url: 'https://halgorithm.github.io/example-game/',
     date: new Date(),
-    tagIds: ['co_op', 'jam'],
+    tags: ['co_op', 'jam'],
     description: "Another example game I made because I'm great",
     image:
       'https://static.giantbomb.com/uploads/scale_small/9/93770/2364832-snes_supermariorpg_2.jpg',
@@ -72,7 +72,7 @@ const exampleData = freeze({
     title: 'Jumpster Jones: The Sequel',
     url: 'https://halgorithm.github.io/example-game/',
     date: new Date(),
-    tagIds: ['platformer'],
+    tags: ['platformer'],
     description: "Another example game I made because I'm great",
     image:
       'https://static.giantbomb.com/uploads/scale_small/9/93770/2364832-snes_supermariorpg_2.jpg',
@@ -84,7 +84,7 @@ const exampleData = freeze({
     title: 'Platformer Jam Game',
     url: 'https://halgorithm.github.io/example-game/',
     date: new Date(),
-    tagIds: ['jam', 'platformer'],
+    tags: ['jam', 'platformer'],
     description: "Another example game I made because I'm great",
     image:
       'https://static.giantbomb.com/uploads/scale_small/9/93770/2364832-snes_supermariorpg_2.jpg',
@@ -99,7 +99,7 @@ const data = freeze({
     title: 'Platformer Jam Game',
     url: 'https://halgorithm.github.io/example-game/',
     date: new Date(),
-    tagIds: ['jam', 'platformer'],
+    tags: ['jam', 'platformer'],
     description: "Another example game I made because I'm great",
     image:
       'https://static.giantbomb.com/uploads/scale_small/9/93770/2364832-snes_supermariorpg_2.jpg',

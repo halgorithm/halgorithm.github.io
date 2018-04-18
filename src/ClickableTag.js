@@ -1,5 +1,5 @@
 import React from 'react';
-import { RaisedButton, FontIcon } from 'material-ui';
+import { Button, Icon } from 'material-ui';
 import { tags } from './data';
 import './ClickableTag.css';
 
@@ -7,19 +7,16 @@ const ClickableTag = ({ tagId, onClick, disabled, highlight }) => {
   const tag = tags[tagId];
 
   return (
-    <RaisedButton
+    <Button
+      variant="raised"
       className="tag"
-      disableTouchRipple={true}
-      primary={highlight}
+      color={highlight ? 'secondary' : 'default'}
       disabled={disabled}
       onClick={onClick}
-      icon={
-        tag ? <FontIcon className="material-icons">{tag.icon}</FontIcon> : null
-      }
-      labelPosition="before"
     >
       {tag ? tag.label : `Unknown tag ${tagId}`}
-    </RaisedButton>
+      <Icon>{tag && tag.icon}</Icon>
+    </Button>
   );
 };
 

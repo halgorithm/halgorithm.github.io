@@ -1,20 +1,24 @@
-.App {
+a:focus {
+  outline: 0;
+}
+
+/* .App {
   text-align: center;
-}
+} */
 
-.App-intro {
+/* .App-intro {
   font-size: large;
-}
+} */
 
-body {
+/* body {
   background-color: #222233;
-}
+} */
 
-a {
+/* a {
   color: #ccccee;
   text-decoration: none;
   font-family: Roboto Mono;
-}
+} */
 
 /* .variable-width .slick-slide p {
   background: blue;
